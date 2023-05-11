@@ -20,8 +20,6 @@ use employees;
     order by emp_no;
 
 
-
-
     select * from employees
     where first_name and last_name
     order by  first_name = 'Irena' and first_name = 'Vidya' and first_name = 'Maya';

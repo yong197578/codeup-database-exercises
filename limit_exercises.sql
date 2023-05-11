@@ -10,6 +10,14 @@ select distinct * from salaries
 order by salary desc
 limit 5;
 
+select emp_no from salaries
+order by salary desc
+limit 5;
+
 select distinct * from salaries
+order by salary desc
+limit 5 offset 45;
+
+select emp_no from salaries
 order by salary desc
 limit 5 offset 45;
