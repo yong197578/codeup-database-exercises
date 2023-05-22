@@ -24,3 +24,9 @@ join departments AS d ON dm.dept_no = d.dept_no
 join salaries AS s ON e.emp_no = s.emp_no
 where s.to_date = '9999-01-01' and dm.to_date = '9999-01-01'
 order by d.dept_name;
+
+
+select concat(employees.first_name, ' ', employees.last_name) as full_name, employees.birth_date from employees
+join dept_manager
+on dept_manager.emp_no = employees.emp_no
+where employees.birth_date like '1980%'
